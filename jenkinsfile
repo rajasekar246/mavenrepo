@@ -10,7 +10,7 @@ node{
    stage('Slack Notification'){
        slackSend baseUrl: 'https://galaxy-ctt7196.slack.com/services/hooks/jenkins-ci/',
        channel: '#slack_testing',
-       color: 'good', 
+       color: 'warning', 
        message: 'Welcome to Jenkins, Slack!', 
        teamDomain: 'galaxy-ctt7196',
        tokenCredentialId: 'slack-demo'
